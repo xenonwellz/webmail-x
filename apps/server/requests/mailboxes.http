@@ -1,0 +1,10 @@
+@baseUrl = http://localhost:3333
+
+GET {{baseUrl}}/mailboxes
+
+
+###
+GET {{baseUrl}}/mailboxes/INBOX
+
+###
+GET {{baseUrl}}/mailboxes/INBOX/emails/1

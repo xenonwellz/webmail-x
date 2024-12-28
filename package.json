@@ -1,0 +1,18 @@
+{
+  "name": "webmail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+	"scripts": {
+		"build": "pnpm -r run build",
+		"dev": "pnpm -r run dev",
+		"frontend:dev": "pnpm --filter @webmail/client run dev",
+		"backend:dev": "pnpm --filter @webmail/server run dev",
+		"frontend:build": "pnpm --filter @webmail/client run build",
+		"backend:build": "pnpm --filter @webmail/server run build",
+		"backend:start": "pnpm --filter @webmail/server run start"
+	},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,18 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: ./.deploy/dockerfiles/server/Dockerfile
+    env_file:
+      - .env
+    labels:
+      - "traefik.docker.network=dokploy-network"
+
+  # client:
+  #   build:
+  #     context: .
+  #     dockerfile: ./.deploy/dockerfiles/client/Dockerfile
+  #   env_file:
+  #     - .env
+  #   labels:
+  #     - "traefik.docker.network=dokploy-network"
